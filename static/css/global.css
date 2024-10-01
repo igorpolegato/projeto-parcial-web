@@ -21,6 +21,7 @@
 
 body, html {
     scroll-behavior: smooth;
+    background-color: var();
 }
 
 section {
@@ -41,4 +42,12 @@ img {
 
 a {
     text-decoration: none;
+}
+
+.gradient-text {
+    background: rgb(219,61,136);
+    background: linear-gradient(1deg, rgba(219,61,136,1) 0%, rgba(141,98,177,1) 37%, rgba(61,140,196,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

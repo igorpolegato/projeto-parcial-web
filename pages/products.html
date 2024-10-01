@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/footer.css">
     <link rel="stylesheet" href="/static/css/card.css">
+
+    <style>
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px 100px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .title {
+            color: var(--black);
+            font-weight: bold;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .card {
+            background-color: var(--white);
+            box-shadow: 0 0 10px 2px var(--primary-color);
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -17,9 +41,9 @@
         <nav class="navigation">
             <ul>
                 <li><a href="/pages/home.html">Home</a></li>
-                <li><a href="/pages/about.html">Sobre</a></li>
-                <li><a href="/pages/services.html">Serviços</a></li>
                 <li><a href="/pages/products.html" class="selected">Produtos</a></li>
+                <li><a href="/pages/services.html">Serviços</a></li>
+                <li><a href="/pages/about.html">Sobre</a></li>
             </ul>
         </nav>
         <div class="contact">
@@ -28,6 +52,123 @@
         </div>
     </header>
 
-</body>
+    <main>
+        <section style="background-color: var(--dark-background); min-height: calc(100vh - 140px); padding-bottom: 32px;">
+            <div class="title">
+                <h2 style="color: var(--white);">Nossos <span class="gradient-text">Produtos</span></h2>
+            </div>
+            <div class="products">
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.corpoevidasuplementos.com.br/images/products/full/f1824-creatina-pura-300g-probiotica.1656952798.png" alt="Creatina">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Creatina
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157338/100-whey-protein-max-titanium-sleeve-900g-baunilha-1.jpg?v=638343735245270000" alt="Whey">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Whey
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.gsuplementos.com.br/upload/produto/imagem/bcaa-5-1-1-200g-em-p-growth-supplements-3.webp" alt="BCAA">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            BCAA
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.corpoevidasuplementos.com.br/images/products/full/f1824-creatina-pura-300g-probiotica.1656952798.png" alt="Creatina">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Creatina
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157338/100-whey-protein-max-titanium-sleeve-900g-baunilha-1.jpg?v=638343735245270000" alt="Whey">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Whey
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.gsuplementos.com.br/upload/produto/imagem/bcaa-5-1-1-200g-em-p-growth-supplements-3.webp" alt="BCAA">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            BCAA
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.corpoevidasuplementos.com.br/images/products/full/f1824-creatina-pura-300g-probiotica.1656952798.png" alt="Creatina">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Creatina
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157338/100-whey-protein-max-titanium-sleeve-900g-baunilha-1.jpg?v=638343735245270000" alt="Whey">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Whey
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.gsuplementos.com.br/upload/produto/imagem/bcaa-5-1-1-200g-em-p-growth-supplements-3.webp" alt="BCAA">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            BCAA
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.instagram.com/igor_polegato/" class="social" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+            </a>
+            <a href="/" class="social" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whatsapp</p>
+            </a>
+            <a href="tel:16982168246" class="social" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <p>Telefone</p>
+            </a>
+        </div>
+        <p style="color: var(--white); margin: 0 auto; width: max-content; font-size: 12px; margin-top: 10px;">© Ígor Polegato 2024</p>
+    </footer>
 
+    <script src="/static/js/fontaws.js"></script>
+</body>
 </html>
