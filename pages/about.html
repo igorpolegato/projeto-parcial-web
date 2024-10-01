@@ -10,6 +10,71 @@
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/footer.css">
     <link rel="stylesheet" href="/static/css/card.css">
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        section {
+            flex-direction: row;
+            position: relative;
+            align-items: center;
+            padding: 0 40px 40px 40px;
+        }
+
+        section:not(:last-child)::after {
+            content: "";
+            width: 90%;
+            background-color: rgba(250, 250, 250, .3);
+            position: absolute;
+            height: 3px;
+            left: 5%;
+            bottom: 0;
+        }
+
+        .sec-text {
+            max-width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sec-text.right {
+            text-align: right;
+            align-items: flex-end;
+        }
+
+        .sec-title {
+            color: var(--white);
+            font-weight: bold;
+            position: relative;
+            width: max-content;
+            font-size: 32px;
+        }
+
+        .sec-image {
+            width: 50vw;
+        }
+
+        .sec-title::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            bottom: 3px;
+            height: 3px;
+            z-index: 1;
+            background: var(--primary-color);
+        }
+
+        .sec-text.right > .sec-title::after {
+            right: 0;
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -17,9 +82,9 @@
         <nav class="navigation">
             <ul>
                 <li><a href="/pages/home.html">Home</a></li>
-                <li><a href="/pages/about.html" class="selected">Sobre</a></li>
-                <li><a href="/pages/services.html">Serviços</a></li>
                 <li><a href="/pages/products.html">Produtos</a></li>
+                <li><a href="/pages/services.html">Serviços</a></li>
+                <li><a href="/pages/about.html" class="selected">Sobre</a></li>
             </ul>
         </nav>
         <div class="contact">
@@ -27,7 +92,58 @@
             <p>Entrar em Contato</p>
         </div>
     </header>
+    <main>
+        <section style="flex-direction: row;">
+            <div class="sec-text left">
+                <div class="sec-title">
+                    <h2>QUEM SOMOS</h2>
+                </div>
+                <p style="color: var(--white);">
+                    Lorem ipsum dolor sit amet. Non officiis reprehenderit aut animi sunt aut aliquid harum ut eveniet repudiandae nam provident impedit. Et omnis voluptas id omnis dolore in sunt omnis eum ullam nesciunt.
+                    Et similique ducimus in sunt voluptas id voluptas incidunt sed reiciendis animi ut iusto voluptatem aut magni dolores aut totam vitae. Et unde omnis quo quidem eaque est placeat sequi et aliquid inventore. In quidem galisum est mollitia veniam aut dolores alias ut nihil dolorum! Sit quos consequuntur eos repellat facilis non esse neque non itaque Quis et voluptas atque et magni adipisci.
+                    Aut consequuntur earum in exercitationem impedit in quos incidunt id nemo quia id laborum odit non fuga distinctio aut sapiente quisquam. Sed eveniet quaerat est consequatur voluptas ex doloribus fuga et eius consectetur ad sunt rerum qui consequatur provident. Id excepturi dolorem et autem similique ut minima porro a dolor eligendi?
+                </p>
+            </div>
+            <div class="sec-image">
+                <img src="/static/imgs/logo.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="sec-image">
+                <img src="https://www.corpoevidasuplementos.com.br/images/categories/suplementos-alimentares.jpg" alt="">
+            </div>
+            <div class="sec-text right">
+                <div class="sec-title">
+                    <h2>NOSSOS PRODUTOS</h2>
+                </div>
+                <p style="color: var(--white);">
+                    Lorem ipsum dolor sit amet. Non officiis reprehenderit aut animi sunt aut aliquid harum ut eveniet repudiandae nam provident impedit. Et omnis voluptas id omnis dolore in sunt omnis eum ullam nesciunt.
+                    Et similique ducimus in sunt voluptas id voluptas incidunt sed reiciendis animi ut iusto voluptatem aut magni dolores aut totam vitae. Et unde omnis quo quidem eaque est placeat sequi et aliquid inventore. In quidem galisum est mollitia veniam aut dolores alias ut nihil dolorum! Sit quos consequuntur eos repellat facilis non esse neque non itaque Quis et voluptas atque et magni adipisci.
+                    Aut consequuntur earum in exercitationem impedit in quos incidunt id nemo quia id laborum odit non fuga distinctio aut sapiente quisquam. Sed eveniet quaerat est consequatur voluptas ex doloribus fuga et eius consectetur ad sunt rerum qui consequatur provident. Id excepturi dolorem et autem similique ut minima porro a dolor eligendi?
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.instagram.com/igor_polegato/" class="social" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+            </a>
+            <a href="/" class="social" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whatsapp</p>
+            </a>
+            <a href="tel:16982168246" class="social" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <p>Telefone</p>
+            </a>
+        </div>
+        <p style="color: var(--white); margin: 0 auto; width: max-content; font-size: 12px; margin-top: 10px;">© Ígor Polegato 2024</p>
+    </footer>
+
+    <script src="/static/js/fontaws.js"></script>
 
 </body>
-
 </html>
