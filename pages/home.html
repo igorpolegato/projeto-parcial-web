@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo Fit</title>
+
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/card.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+    <style>
+        .intro {
+            height: calc(100vh - 70px);
+            background-color: var(--dark-background);
+            padding: 100px 50px;
+            justify-content: space-between;
+        }
+
+        .products {
+            background-color: var(--light-background);
+            padding: 10px;
+        }
+
+        .skills {
+            border: 1px solid black;
+        }
+
+        .logo {
+            width: 900px;
+        }
+
+        .logo img {
+            width: inherit;
+        }
+
+        .intro-text {
+            display: flex;
+            height: 460px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            color: var(--white);
+        }
+
+        .title {
+            font-size: 70px;
+            color: var(--black);
+            line-height: 60px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 25px;
+        }
+
+        .gradient-text {
+            background: rgb(219,61,136);
+            background: linear-gradient(1deg, rgba(219,61,136,1) 0%, rgba(141,98,177,1) 37%, rgba(61,140,196,1) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cards {
+            display: flex;
+            gap: 15px;
+            overflow-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .visit-btn {
+            display: block;
+            width: 50%;
+            margin: 15px auto 0;
+            height: 100%;
+            color: var(--black);
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+            border: 3px solid var(--primary-color);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/pages/home.html" class="selected">Home</a></li>
+                <li><a href="/pages/about.html">Sobre</a></li>
+                <li><a href="/pages/services.html">Serviços</a></li>
+                <li><a href="/pages/products.html">Produtos</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="/pages/contact.html"></a>
+            <p>Entrar em Contato</p>
+        </div>
+    </header>
+    <main>
+        <section class="intro" style="flex-direction: row;">
+            <div class="intro-text">
+                <h2 class="title" style="color: var(--white);">Bem vindo a <span class="gradient-text">TURBO FIT</span></h2>
+                <p class="subtitle">Aqui sua evolução é mais rápida!</p>
+            </div>
+            <div class="logo">
+                <img src="/static/imgs/logo.png" alt="">
+            </div>
+        </section>
+        <section id="products" class="products" style="justify-content: center; padding: 20px;">
+            <h2 class="title">Produtos</h2>
+            <div class="cards">
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.corpoevidasuplementos.com.br/images/products/full/f1824-creatina-pura-300g-probiotica.1656952798.png" alt="Creatina">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Creatina
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157338/100-whey-protein-max-titanium-sleeve-900g-baunilha-1.jpg?v=638343735245270000" alt="Whey">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            Whey
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="card-content" href="/pd">
+                        <div class="card-image">
+                            <img src="https://www.gsuplementos.com.br/upload/produto/imagem/bcaa-5-1-1-200g-em-p-growth-supplements-3.webp" alt="BCAA">
+                        </div>
+                        <p class="subtitle" style="color: var(--black);">
+                            BCAA
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <a href="/pages/products.html" class="visit-btn">Ver Mais</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.instagram.com/igor_polegato/" class="social" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+            </a>
+            <a href="/" class="social" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whatsapp</p>
+            </a>
+            <a href="tel:16982168246" class="social" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <p>Telefone</p>
+            </a>
+        </div>
+        <p style="color: var(--white); margin: 0 auto; width: max-content; font-size: 12px; margin-top: 10px;">© Ígor Polegato 2024</p>
+    </footer>
+
+    <script src="/static/js/fontaws.js"></script>
+</body>
+</html>
