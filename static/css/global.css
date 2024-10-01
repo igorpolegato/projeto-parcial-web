@@ -7,6 +7,7 @@
     --light-background: #f7f7f7;
 
     --primary-color: #915fb0;
+    --primary-color-code: 145, 95, 176;
 
     --font: "Poppins", sans-serif;
 }
@@ -45,6 +46,14 @@ img {
 a {
     text-decoration: none;
 }
+
+.title {
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+}
+
 
 .gradient-text {
     background: rgb(219,61,136);

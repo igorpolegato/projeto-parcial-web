@@ -1,3 +1,12 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 100px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
 .card {
     width: 300px;
     box-shadow: 0px 1px 6px rgba(0,0,0,0.35);
