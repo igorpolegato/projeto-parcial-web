@@ -10,6 +10,9 @@
     --primary-color-code: 145, 95, 176;
 
     --font: "Poppins", sans-serif;
+
+    --primary-shadow: 0 0 10px 2px var(--primary-color);
+    --dark-shadow: 0px 1px 6px rgba(0,0,0,0.35);
 }
 
 * {
