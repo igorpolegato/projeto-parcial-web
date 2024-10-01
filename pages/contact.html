@@ -4,12 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turbo Fit | Produtos</title>
+    <title>Turbo Fit | Contato</title>
 
     <link rel="stylesheet" href="/static/css/global.css">
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/footer.css">
     <link rel="stylesheet" href="/static/css/card.css">
+    <link rel="stylesheet" href="/static/css/inputs.css">
+
+    <style>
+        section {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fields {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sep {
+            margin: 20px 0;
+            color: var(--white);
+            position: relative;
+        }
+
+        .sep::after, .sep::before {
+            content: "";
+            position: absolute;
+            width: 30%;
+            background-color: var(--white);
+            height: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 10px;
+        }
+
+        .sep::before {
+            left: -35%;
+        }
+
+        .sep::after {
+            right: -35%;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -28,7 +68,67 @@
             <p>Entrar em Contato</p>
         </div>
     </header>
+    <main>
+        <section>
+            <form action="" method="post">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="field">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="sep">
+                <p>Ou Tente Nossas Redes</p>
+            </div>
+            <div class="footer-content">
+                <a href="https://www.instagram.com/igor_polegato/" class="social" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@igor_polegato</p>
+                </a>
+                <a href="/" class="social" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>(16) 98216-8246</p>
+                </a>
+                <a href="tel:16982168246" class="social" target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(16) 98216-8246</p>
+                </a>
+            </div>
 
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.instagram.com/igor_polegato/" class="social" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Instagram</p>
+            </a>
+            <a href="/" class="social" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whatsapp</p>
+            </a>
+            <a href="tel:16982168246" class="social" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <p>Telefone</p>
+            </a>
+        </div>
+        <p style="color: var(--white); margin: 0 auto; width: max-content; font-size: 12px; margin-top: 10px;">© Ígor
+            Polegato 2024</p>
+    </footer>
+
+    <script src="/static/js/fontaws.js"></script>
 </body>
-
 </html>
